@@ -5,7 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      margin: {
+        '108': '27rem',   // 432px
+        '120': '30rem',   // 480px
+        '132': '33rem',   // 528px
+        '144': '36rem',   // 576px
+        '156': '39rem',   // 624px
+        '168': '42rem',   // 672px
+        '180': '45rem',   // 720px
+      },
+    },
   },
   plugins: [
     require('daisyui'),
