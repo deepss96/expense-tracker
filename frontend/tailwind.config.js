@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       margin: {
+        '86' : '23rem',
+        '102': '26rem',   // 432px
         '108': '27rem',   // 432px
         '120': '30rem',   // 480px
         '132': '33rem',   // 528px
