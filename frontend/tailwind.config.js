@@ -18,6 +18,12 @@ export default {
         '168': '42rem',   // 672px
         '180': '45rem',   // 720px
       },
+      height: {
+        '180': '45rem', // Define your custom height here
+      },
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [

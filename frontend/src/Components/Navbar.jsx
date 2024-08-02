@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -23,27 +24,27 @@ function Navbar() {
             <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a> HOME </a> </li>
-              <li><a> ABOUT US </a> </li>
-              <li><a> RESOURCES </a> </li>
-              <li><a> CONTACT US </a> </li>
-              <li><a> LOG IN </a> </li>
+              <li><Link to="/"> HOME </Link></li>
+              <li><a> ABOUT US </a></li>
+              <li><Link to="/Resources"> RESOURCES </Link></li>
+              <li><a> CONTACT US </a></li>
+              <li><a> LOG IN </a></li>
             </ul>
           </div>
           <a className="google-font logo">skillUp</a>
         </div>
-        <div className="navbar-right hidden lg:flex ">
+        <div className="navbar-right hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li><a> HOME </a> </li>
-            <li><a> ABOUT US </a> </li>
-            <li><a> RESOURCES </a> </li>
-            <li><a> CONTACT US </a> </li>
-            <li><a> LOG IN </a> </li>
+            <li><Link to="/"> HOME </Link></li>
+            <li><a> ABOUT US </a></li>
+            <li><Link to="/Resources"> RESOURCES </Link></li>
+            <li><a> CONTACT US </a></li>
+            <li><a> LOG IN </a></li>
           </ul>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
