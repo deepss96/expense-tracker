@@ -1,6 +1,5 @@
-import React , {useEffect , useRef} from "react";
-import {useLocation} from 'react-router-dom';
-import Navbar from "./Navbar.jsx";
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation } from 'react-router-dom';
 import img from "../assets/OBJECTSboys.png";
 import img2 from "../assets/Frame1.svg";
 import img3 from "../assets/Frame7.png";
@@ -16,7 +15,8 @@ import deepakImg from "../assets/deepakImg.jpeg";
 import studyingGirl from "../assets/sleepingGirl.svg";
 import hands from "../assets/hands.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPhone , faEnvelope, faMapLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Carousel from "./Carousel";
 
 function Banner() {
 
@@ -24,10 +24,10 @@ function Banner() {
   const contactRef = useRef(null);
 
   useEffect(() => {
-    if( location.hash === '#contact' && contactRef.current){
-      contactRef.current.scrollIntoView({ behaviour : "smooth"});
+    if (location.hash === '#contact' && contactRef.current) {
+      contactRef.current.scrollIntoView({ behaviour: "smooth" });
     }
-  } , [location]);
+  }, [location]);
 
   return (
     <>
@@ -176,15 +176,15 @@ function Banner() {
 
       <div className="mb-20 bg-black flex text-white font-Poppins h-220">
         <div className=" w-144 mt-44 m-20">
-          <img src={Join} alt="aboutus_Img" />
+          <Carousel />
         </div>
         <div className="w-50% mt-20">
           <div className="text-5xl w-180 text-white font-Poppins font-bold pt-56">
-          JOIN OUR DAILY LIVE SESSIONS                                                 
+            JOIN OUR DAILY LIVE SESSIONS
           </div>
           <div className="text-lg h-10 w-132 text-justify pt-5">
             <p>
-            Unlock your potential with SkillUp’s daily live sessions! Engage with expert instructors and fellow learners in real-time to enhance your soft skills. Our interactive sessions cover a variety of topics, from effective communication to leadership strategies, ensuring you gain practical insights and hands-on experience. Don’t miss out on the opportunity to ask questions, participate in discussions, and accelerate your professional growth. Join us every day and take a step closer to achieving your career goals!
+              Unlock your potential with SkillUp’s daily live sessions! Engage with expert instructors and fellow learners in real-time to enhance your soft skills. Our interactive sessions cover a variety of topics, from effective communication to leadership strategies, ensuring you gain practical insights and hands-on experience. Don’t miss out on the opportunity to ask questions, participate in discussions, and accelerate your professional growth. Join us every day and take a step closer to achieving your career goals!
             </p>
           </div>
         </div>
@@ -216,72 +216,72 @@ function Banner() {
       </div>
       {/* Section 5 */}
       <section id="contact" ref={contactRef}>
-      <div className="mt-56 h-200 flex items-center mb-32">
-        <div className="ml-20 w-50% pl-64">
-          <div className="flex">
-            <h3 className="font-poppints text-black font-semibold text-6xl w-64">Let's get in touch</h3>
-            <img src={hands} className="w-20 mt-12 -ml-4" alt="hands" />
-          </div>
-          <div className="mt-20">
-            <h6 className="font-poppints text-black font-semibold text-2xl w-56">Don’t  be afraid to
-            say hello to us!</h6>
-            <div className="mt-14 font-poppins">
+        <div className="mt-56 h-200 flex items-center mb-32">
+          <div className="ml-20 w-50% pl-64">
+            <div className="flex">
+              <h3 className="font-poppints text-black font-semibold text-6xl w-64">Let's get in touch</h3>
+              <img src={hands} className="w-20 mt-12 -ml-4" alt="hands" />
+            </div>
+            <div className="mt-20">
+              <h6 className="font-poppints text-black font-semibold text-2xl w-56">Don’t  be afraid to
+                say hello to us!</h6>
+              <div className="mt-14 font-poppins">
                 <div className="flex flex-wrap w-44 items-center">
-                  <FontAwesomeIcon icon={faEnvelope} className="mr-2"/>
+                  <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                   <h6 className="font-semibold text-lg">Email</h6>
                   <span className="ml-6">contact@skillup.com</span>
                 </div>
                 <div className="flex mt-2 flex-wrap w-44 items-center">
-                <FontAwesomeIcon icon={faPhone} className="mr-2"/>
+                  <FontAwesomeIcon icon={faPhone} className="mr-2" />
                   <h6 className=" font-semibold text-lg">Phone</h6>
                   <span className="ml-6">+91 9835467289</span>
                 </div>
                 <div className="flex mt-2 flex-wrap w-96 items-center">
-                <FontAwesomeIcon icon={faMapLocationDot} className="mr-2"/>
+                  <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
                   <h6 className="font-semibold text-lg">Office</h6>
                   <span className="ml-6">W-9, Industrial Area, Near 200 Quarters, Yamunanagar, Haryana-135001</span>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-50% ml-64">
+            <div className="ml-12 w-96 -mb-2">
+              <img src={studyingGirl} alt="sleepingTextBookGirl" />
+            </div>
+            <div className="text-white font-poppins bg-black w-108 h-108 pt-6 rounded-lg" >
+              <div className=" p-8 rounded-lg">
+                <h2 className="text-white text-2xl mb-4">Contact Us</h2>
+                <form>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    className="bg-black mb-6 w-40 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    className="bg-black w-40 mb-6 ml-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
+                  />
+                  <input
+                    type="tel"
+                    placeholder="Phone Number"
+                    className="bg-black w-40 mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
+                  />
+                  <input
+                    placeholder="Message"
+                    className="bg-black w-full mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
+                  ></input>
+                  <button
+                    type="submit"
+                    className="bg-purple-600 mt-6  w-full text-white p-2 rounded hover:bg-purple-700"
+                  >
+                    SUBMIT FORM
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-        <div className="w-50% ml-64">
-          <div className="ml-12 w-96 -mb-2">
-            <img src={studyingGirl} alt="sleepingTextBookGirl" />
-          </div>
-          <div className="text-white font-poppins bg-black w-108 h-108 pt-6 rounded-lg" >
-          <div className=" p-8 rounded-lg">
-              <h2 className="text-white text-2xl mb-4">Contact Us</h2>
-              <form>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  className="bg-black mb-6 w-40 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                />
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="bg-black w-40 mb-6 ml-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                />
-                <input
-                  type="tel"
-                  placeholder="Phone Number"
-                  className="bg-black w-40 mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                />
-                <input
-                  placeholder="Message"
-                  className="bg-black w-full mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                ></input>
-                <button
-                  type="submit"
-                  className="bg-purple-600 mt-6  w-full text-white p-2 rounded hover:bg-purple-700"
-                >
-                  SUBMIT FORM
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
       </section>
     </>
   );
