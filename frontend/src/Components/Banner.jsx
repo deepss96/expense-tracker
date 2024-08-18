@@ -7,7 +7,6 @@ import img4 from "../assets/Frame4.png";
 import img5 from "../assets/img5.svg";
 import holisticDev from "../assets/holisticDev.svg";
 import scholarImg from "../assets/scholarImg.svg";
-import Join from "../assets/join.svg";
 import uditImg from "../assets/uditImg.jpg";
 import harshitaImg from "../assets/harshitaImg.jpg";
 import shipraImg from "../assets/shipraImg.jpg";
@@ -17,6 +16,7 @@ import hands from "../assets/hands.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapLocationDot } from '@fortawesome/free-solid-svg-icons';
 import Carousel from "./Carousel";
+import ContactForm from "./ContactForm";
 
 function Banner() {
 
@@ -244,43 +244,11 @@ function Banner() {
               </div>
             </div>
           </div>
+
           <div className="w-50% ml-64">
-            <div className="ml-12 w-96 -mb-2">
-              <img src={studyingGirl} alt="sleepingTextBookGirl" />
-            </div>
-            <div className="text-white font-poppins bg-black w-108 h-108 pt-6 rounded-lg" >
-              <div className=" p-8 rounded-lg">
-                <h2 className="text-white text-2xl mb-4">Contact Us</h2>
-                <form>
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="bg-black mb-6 w-40 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="bg-black w-40 mb-6 ml-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="bg-black w-40 mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  />
-                  <input
-                    placeholder="Message"
-                    className="bg-black w-full mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  ></input>
-                  <button
-                    type="submit"
-                    className="bg-purple-600 mt-6  w-full text-white p-2 rounded hover:bg-purple-700"
-                  >
-                    SUBMIT FORM
-                  </button>
-                </form>
-              </div>
-            </div>
+            <ContactForm />
           </div>
+
         </div>
       </section>
     </>
