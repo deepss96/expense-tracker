@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { useLocation } from 'react-router-dom';
 import img from "../assets/OBJECTSboys.png";
 import img2 from "../assets/Frame1.svg";
@@ -25,7 +25,7 @@ function Banner() {
 
   useEffect(() => {
     if (location.hash === '#contact' && contactRef.current) {
-      contactRef.current.scrollIntoView({ behaviour: "smooth" });
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
 
@@ -33,256 +33,156 @@ function Banner() {
     <>
       {/* Section 0 */}
       <div className="mx-auto md:px-20 px-4 flex flex-col md:flex-row banner-bg">
-        <div className="order-2 md:order-1 md:w-1/2 w-full md:mt-32 mt-20  ">
-          <div className="space-y-2 ">
-            <h1 className="text-6xl google-font">HERE AT skillUp</h1>
-            <h2 className="text-4xl google-font tagline">
-              Learn, Grow and Develop.
-            </h2>
-            <br />
-            <label className="input input-bordered flex items-center gap-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                className="w-4 h-4 opacity-70"
-              >
-                <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
-                <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
-              </svg>
-              <input type="text" className="grow " placeholder="Email" />
-            </label>
-          </div>
-          <button className="btn bg-pink-500 mt-5 border-none hover:bg-pink-300 duration-300 ">
+        <div className="order-2 md:order-1 md:w-1/2 w-full md:mt-32 mt-20 space-y-2">
+          <h1 className="text-4xl md:text-6xl google-font">HERE AT skillUp</h1>
+          <h2 className="text-2xl md:text-4xl google-font tagline">
+            Learn, Grow and Develop.
+          </h2>
+          <label className="input input-bordered flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              className="w-4 h-4 opacity-70"
+            >
+              <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+              <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            <input type="text" className="grow " placeholder="Email" />
+          </label>
+          <button className="btn bg-pink-500 mt-5 border-none hover:bg-pink-300 duration-300">
             Get Started
           </button>
         </div>
-        <div className="order-1 md:w-1/2 w-4/5 md:h-1/2 h-full md:m-20 banner-img">
-          <img src={img} className="h-92 rounded-3xl md:pt-0 pt-16 " alt="" />
+        <div className="order-1 md:w-1/2 w-full md:h-1/2 h-full md:m-20 banner-img">
+          <img src={img} className="h-auto w-full md:w-auto rounded-3xl md:pt-0 pt-16" alt="" />
         </div>
       </div>
 
       {/* Section 1 */}
-      <div className="mt-80 mb-64 mx-auto md:px-20 px-4 ">
-        <h2 className="text-7xl text-black font-poppins font-bold md:mt-52 mt-64 text-center">
+      <div className="mt-40 md:mt-80 mb-32 md:mb-64 mx-auto md:px-20 px-4">
+        <h2 className="text-3xl md:text-7xl text-black font-poppins font-bold md:mt-52 mt-64 text-center">
           Why choose skillUp
         </h2>
 
-        <div className=" p-4 sm:p-10 text-white grid grid-rows-1">
-          <div className="grid place-items-center grid-cols-1 md:grid-cols-3 gap-2">
-            <div className="mr-auto bg-gradient w-80 h-108 flex-wrap justify-center rounded-2xl">
-              <img src={img2} className="h-44 mt-4 ml-5" alt="" />
-              <div className="p-4">
-                <h3 className="text-2xl font-poppins font-bold mb-2">
-                  Hands-On Learning
+        <div className="p-4 sm:p-10 text-white grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-gradient w-full h-auto flex-wrap justify-center rounded-2xl p-4">
+            <img src={img2} className="h-44 mb-4" alt="" />
+            <h3 className="text-xl md:text-2xl font-poppins font-bold mb-2">
+              Hands-On Learning
+            </h3>
+            <p className="text-justify font-poppins">
+              Engage in project-based learning where students can build, create, and innovate, making education interactive and enjoyable.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <div className="bg-gradient flex flex-col md:flex-row justify-center items-center p-4 rounded-2xl">
+              <div className="md:w-1/2">
+                <h3 className="text-xl md:text-2xl font-poppins font-bold mb-2">
+                  Real-World Skills
                 </h3>
-                <p className="text-justify font-poppins pr-5">
-                  Engage in project-based learning where students can build,
-                  create, and innovate, making education interactive and
-                  enjoyable.
+                <p className="font-poppins">
+                  Equip students with practical skills that go beyond textbooks, preparing them for real-world challenges and opportunities.
                 </p>
               </div>
-            </div>
-
-            <div className="gap-6 flex-wrap w-178 items-center justify-center">
-              <div className="bg-gradient flex justify-center align-items-center pt-5 pl-6 pr-6 rounded-2xl">
-                <div className="">
-                  <h3 className="text-2xl font-poppins font-bold mb-2 ">
-                    Real-World Skills
-                  </h3>
-                  <p className="font-poppins">
-                    Equip students with practical skills that go beyond
-                    textbooks, preparing them for real-world challenges and
-                    opportunities.
-                  </p>
-                </div>
-                <div className="-mb-6 w-132 ">
-                  <img src={img3} className=" " alt="" />
-                </div>
-              </div>
-              <div className="bg-gradient mt-2 flex justify-center items-center pr-8 pb-10 rounded-2xl">
-                <div className="w-180 pb-8 -mt-10">
-                  <img src={img5} className="" alt="" />
-                </div>
-                <div className="">
-                  <h3 className="text-2xl font-poppins font-bold text-right mb-2">
-                    Vibrant Community
-                  </h3>
-                  <p className="font-poppins text-right">
-                    Join a thriving community of like-minded peers, educators,
-                    and experts, fostering collaboration and a supportive
-                    learning environment.
-                  </p>
-                </div>
+              <div className="md:w-1/2">
+                <img src={img3} className="mt-4 md:mt-0" alt="" />
               </div>
             </div>
 
-            <div className="bg-gradient ml-auto w-80 h-108 flex-wrap justify-center rounded-2xl">
-              <img src={img4} className="h-56 mt-4 ml-10" alt="" />
-              <div className="p-4 -mt-5">
-                <h3 className="text-xl font-poppins font-bold mb-2">
-                  Expert Mentorship
+            <div className="bg-gradient flex flex-col md:flex-row justify-center items-center p-4 rounded-2xl">
+              <div className="md:w-1/2">
+                <img src={img5} className="mt-4 md:mt-0" alt="" />
+              </div>
+              <div className="md:w-1/2">
+                <h3 className="text-xl md:text-2xl font-poppins font-bold text-right mb-2">
+                  Vibrant Community
                 </h3>
-                <p className="text-justify font-poppins pr-5">
-                  Connect with industry leaders and professionals who provide
-                  guidance, insights, and mentorship, helping students navigate
-                  their career paths.
+                <p className="font-poppins text-right">
+                  Join a thriving community of like-minded peers, educators, and experts, fostering collaboration and a supportive learning environment.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="pt-2 text-white flex">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <div className="bg-gradient flex justify-center items-center pl-6 rounded-2xl">
-                <div>
-                  <h3 className="text-3xl font-poppins font-bold mb-2">
-                    Customized Curriculum
-                  </h3>
-                  <p className="font-poppins">
-                    Schools can integrate our tailored programs into their
-                    curriculum, enhancing the educational experience and meeting
-                    modern educational standards.
-                  </p>
-                </div>
-
-                <div className="w-180 pt-16 -mt-10">
-                  <img src={scholarImg} alt="" />
-                </div>
-              </div>
-
-              <div className="bg-gradient flex justify-center items-center pr-8 rounded-2xl">
-                <div className="w-220 pt-16 ">
-                  <img src={holisticDev} alt="" />
-                </div>
-                <div className="">
-                  <h3 className="text-3xl font-poppins font-bold text-right mb-2">
-                    Holistic Development
-                  </h3>
-                  <p className="text-right font-poppins">
-                    Focus on the overall growth of students by nurturing
-                    creativity, critical thinking, and problem-solving
-                    21st-century skills that set them apart from the competition
-                    ensuring a bright future and a competitive edge in any
-                    field.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Section-3 */}
-
-      <div className="mb-20 bg-black flex text-white font-Poppins h-220">
-        <div className=" w-144 mt-44 m-20">
-          <Carousel />
-        </div>
-        <div className="w-50% mt-20">
-          <div className="text-5xl w-180 text-white font-Poppins font-bold pt-56">
-            JOIN OUR DAILY LIVE SESSIONS
-          </div>
-          <div className="text-lg h-10 w-132 text-justify pt-5">
-            <p>
-              Unlock your potential with SkillUp’s daily live sessions! Engage with expert instructors and fellow learners in real-time to enhance your soft skills. Our interactive sessions cover a variety of topics, from effective communication to leadership strategies, ensuring you gain practical insights and hands-on experience. Don’t miss out on the opportunity to ask questions, participate in discussions, and accelerate your professional growth. Join us every day and take a step closer to achieving your career goals!
+          <div className="bg-gradient w-full h-auto flex-wrap justify-center rounded-2xl p-4">
+            <img src={img4} className="h-44 mb-4" alt="" />
+            <h3 className="text-xl md:text-2xl font-poppins font-bold mb-2">
+              Expert Mentorship
+            </h3>
+            <p className="text-justify font-poppins">
+              Connect with industry leaders and professionals who provide guidance, insights, and mentorship, helping students navigate their career paths.
             </p>
           </div>
         </div>
+
+        <div className="pt-8 text-white flex flex-col md:flex-row gap-4">
+          <div className="bg-gradient flex justify-center items-center p-4 rounded-2xl">
+            <div>
+              <h3 className="text-xl md:text-3xl font-poppins font-bold mb-2">
+                Customized Curriculum
+              </h3>
+              <p className="font-poppins">
+                Schools can integrate our tailored programs into their curriculum, enhancing the educational experience and meeting modern educational standards.
+              </p>
+            </div>
+            <div className="w-full md:w-auto mt-4 md:mt-0">
+              <img src={scholarImg} alt="" />
+            </div>
+          </div>
+
+          <div className="bg-gradient flex justify-center items-center p-4 rounded-2xl">
+            <div className="w-full md:w-auto">
+              <img src={holisticDev} alt="" />
+            </div>
+            <div className="text-right">
+              <h3 className="text-xl md:text-3xl font-poppins font-bold mb-2">
+                Holistic Development
+              </h3>
+              <p className="font-poppins">
+                Focus on the overall growth of students by nurturing creativity, critical thinking, and problem-solving skills that ensure a bright future.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* Section-4 */}
-      <div>
-        <div className="mt-64 flex justify-center items-center font-poppins font-semibold text-black text-4xl">
-          <h3 className="w-96 text-center"> We are the people who make up skillUp </h3>
+      {/* Section 3 */}
+      <div className="mb-20 bg-black flex flex-col md:flex-row text-white font-Poppins p-4 md:p-20">
+        <div className="w-full md:w-1/2 flex justify-center items-center">
+          <Carousel />
         </div>
-        <div className="flex justify-between items-center text-black ml-56 m-20 mr-56">
-          <div>
-            <img src={uditImg} className="h-96"></img>
-            <h4 className="text-2xl text-center font-poppins font-bold">Udit Agrawal</h4>
+        <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start mt-8 md:mt-0">
+          <h3 className="text-3xl md:text-5xl font-bold mb-4">
+            JOIN OUR DAILY LIVE SESSIONS
+          </h3>
+          <p className="text-lg text-justify">
+            Unlock your potential with SkillUp’s daily live sessions! Engage with expert instructors, participate in real-time discussions, and get immediate feedback. Whether you're looking to sharpen your skills or explore new areas, our live sessions provide a dynamic and interactive learning experience. Don't miss out on this opportunity to grow, learn, and excel.
+          </p>
+        </div>
+      </div>
+
+      {/* Section 4 */}
+      <div ref={contactRef} className="bg-gray-900 text-white font-poppins">
+        <div className="text-center text-4xl py-12">
+          Contact Us
+        </div>
+        <div className="p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-col items-center">
+            <FontAwesomeIcon icon={faPhone} size="2x" />
+            <p className="mt-4">Phone: +91-1234567890</p>
           </div>
-          <div>
-            <img src={shipraImg} className="h-96"></img>
-            <h4 className="text-2xl text-center font-poppins font-bold">Shipra Agrawal</h4>
+          <div className="flex flex-col items-center">
+            <FontAwesomeIcon icon={faEnvelope} size="2x" />
+            <p className="mt-4">Email: info@skillup.com</p>
           </div>
-          <div>
-            <img src={harshitaImg} className="h-96"></img>
-            <h4 className="text-2xl text-center font-poppins font-bold">Harshita Lalwani</h4>
-          </div>
-          <div>
-            <img src={deepakImg} className="h-96"></img>
-            <h4 className="text-2xl text-center font-poppins font-bold">Deepak Vaishnav</h4>
+          <div className="flex flex-col items-center">
+            <FontAwesomeIcon icon={faMapLocationDot} size="2x" />
+            <p className="mt-4">Location: Aryan College, Ajmer, India</p>
           </div>
         </div>
       </div>
-      {/* Section 5 */}
-      <section id="contact" ref={contactRef}>
-        <div className="mt-56 h-200 flex items-center mb-32">
-          <div className="ml-20 w-50% pl-64">
-            <div className="flex">
-              <h3 className="font-poppints text-black font-semibold text-6xl w-64">Let's get in touch</h3>
-              <img src={hands} className="w-20 mt-12 -ml-4" alt="hands" />
-            </div>
-            <div className="mt-20">
-              <h6 className="font-poppints text-black font-semibold text-2xl w-56">Don’t  be afraid to
-                say hello to us!</h6>
-              <div className="mt-14 font-poppins">
-                <div className="flex flex-wrap w-44 items-center">
-                  <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
-                  <h6 className="font-semibold text-lg">Email</h6>
-                  <span className="ml-6">contact@skillup.com</span>
-                </div>
-                <div className="flex mt-2 flex-wrap w-44 items-center">
-                  <FontAwesomeIcon icon={faPhone} className="mr-2" />
-                  <h6 className=" font-semibold text-lg">Phone</h6>
-                  <span className="ml-6">+91 9835467289</span>
-                </div>
-                <div className="flex mt-2 flex-wrap w-96 items-center">
-                  <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
-                  <h6 className="font-semibold text-lg">Office</h6>
-                  <span className="ml-6">W-9, Industrial Area, Near 200 Quarters, Yamunanagar, Haryana-135001</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="w-50% ml-64">
-            <div className="ml-12 w-96 -mb-2">
-              <img src={studyingGirl} alt="sleepingTextBookGirl" />
-            </div>
-            <div className="text-white font-poppins bg-black w-108 h-108 pt-6 rounded-lg" >
-              <div className=" p-8 rounded-lg">
-                <h2 className="text-white text-2xl mb-4">Contact Us</h2>
-                <form>
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="bg-black mb-6 w-40 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="bg-black w-40 mb-6 ml-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  />
-                  <input
-                    type="tel"
-                    placeholder="Phone Number"
-                    className="bg-black w-40 mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  />
-                  <input
-                    placeholder="Message"
-                    className="bg-black w-full mb-6 border-b-2 border-gray-500 text-white p-2 mb-2 rounded"
-                  ></input>
-                  <button
-                    type="submit"
-                    className="bg-purple-600 mt-6  w-full text-white p-2 rounded hover:bg-purple-700"
-                  >
-                    SUBMIT FORM
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
