@@ -1,6 +1,6 @@
-import { faWindowRestore } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from "../assets/logo/logo-no-background.svg"
 
 function Navbar() {
   return (
@@ -29,10 +29,12 @@ function Navbar() {
               <li><Link to="/About-us"> ABOUT US </Link></li>
               <li><Link to="/Resources"> RESOURCES </Link></li>
               <li><Link to="/#contact" > CONTACT US </Link></li>
-              <li><a href='tg://resolve?domain=SkillUp360' target="_blank"> JOIN COMMUNITY </a></li>
+              <li><a href='https://t.me/+vbS5sENjD5c0YzI1' target="_blank"> JOIN COMMUNITY </a></li>
             </ul>
           </div>
-          <a className="google-font logo">skillUp</a>
+          
+          {/*<a className="google-font logo md:ml-8">skillUp</a>*/}
+          <img src={logo} alt="Logo" className="md:ml-8 md:h-16 md:w-40 h-14 w-28 ml-16"/>
         </div>
         <div className="navbar-right hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

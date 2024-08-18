@@ -1,9 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import join from "../assets/join.svg";
-import join1 from "../assets/Join1.jpeg";
-import join2 from "../assets/Join2.jpg";
-import join3 from "../assets/Join3.png";
+import join from "../assets/skillsImg/img5.jpg";
+import join1 from "../assets/skillsImg/img4.jpg";
+import join2 from "../assets/skillsImg/img3.png";
+import join3 from "../assets/skillsImg/img2.png";
+import join4 from "../assets/skillsImg/img1.png";
 
 
 
@@ -21,19 +22,23 @@ const Carousel = () => {
     const slides = [
         {
             id: 1, content:
-                <img src={join} className=" p-3 " alt="" />
+                <img src={join} className="p-2 skills" alt="" />
         },
         {
             id: 2, content:
-                <img src={join1} className=" p-3 " alt="" />
+                <img src={join1} className="p-2 skills" alt="" />
         },
         {
             id: 3, content:
-                <img src={join2} className=" p-3 " alt="" />
+                <img src={join2} className="p-2 skills" alt="" />
         },
         {
             id: 4, content:
-                <img src={join3} className=" p-3 " alt="" />
+                <img src={join3} className=" p-2 skills" alt="" />
+        },
+        {
+            id: 5, content:
+                <img src={join4} className="p-2 skills" alt="" />
         },
     ];
 
