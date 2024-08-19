@@ -17,24 +17,25 @@ const Carousel = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        arrows:false,
     };
 
     const slides = [
         {
             id: 1, content:
-                <img src={join} className="p-2 skills" alt="" />
+                <img src={join} className="p-2 md:h-132 h-80 w-full rounded-3x1 skills" alt="" />
         },
         {
             id: 2, content:
-                <img src={join1} className="p-2 skills" alt="" />
+                <img src={join1} className="p-2 md:h-132 h-80 w-full rounded-3x1 skills" alt="" />
         },
         {
             id: 3, content:
-                <img src={join2} className="p-2 skills" alt="" />
+                <img src={join2} className="p-2 md:h-132 h-80 w-full rounded-3x1 skills" alt="" />
         },
         {
             id: 4, content:
-                <img src={join3} className=" p-2 skills" alt="" />
+                <img src={join3} className="p-2 md:h-132 h-80 w-full rounded-3x1 skills" alt="" />
         },
         {
             id: 5, content:

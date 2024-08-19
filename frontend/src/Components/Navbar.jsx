@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../assets/logo/logo-no-background.svg"
 
 function Navbar() {
   return (
@@ -32,9 +31,8 @@ function Navbar() {
               <li><a href='https://t.me/+vbS5sENjD5c0YzI1' target="_blank"> JOIN COMMUNITY </a></li>
             </ul>
           </div>
-          
-          {/*<a className="google-font logo md:ml-8">skillUp</a>*/}
-          <img src={logo} alt="Logo" className="md:ml-8 md:h-16 md:w-40 h-14 w-28 ml-16"/>
+
+          <a className="google-font logo md:ml-8">skillUp</a>
         </div>
         <div className="navbar-right hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

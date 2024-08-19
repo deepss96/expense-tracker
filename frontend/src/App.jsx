@@ -12,11 +12,11 @@ function App() {
   const router  = createBrowserRouter([
     {
       path: '/',
-      element : <> <Navbar /> <Banner/> <Chatbot/> <Footer/></>,
+      element : <> <Navbar /> <Banner/> <Footer/></>,
     },
     {
       path: '/Resources',
-      element : <> <Navbar /> <ResourcesPage/> <Chatbot/> <Footer/> </>,
+      element : <> <Navbar /> <ResourcesPage/> <Footer/> </>,
     },
     {
       path: '/About-us',
