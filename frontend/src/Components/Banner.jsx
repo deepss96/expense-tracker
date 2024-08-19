@@ -234,12 +234,12 @@ function Banner() {
                 <div className="flex flex-wrap w-44 items-center">
                   <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                   <h6 className="font-semibold text-lg">Email</h6>
-                  <span className="ml-6">contact@skillup.com</span>
+                  <span className="ml-6">	helpdesk.skillup@gmail.com</span>
                 </div>
                 <div className="flex mt-2 flex-wrap w-44 items-center">
                   <FontAwesomeIcon icon={faPhone} className="mr-2" />
                   <h6 className=" font-semibold text-lg">Phone</h6>
-                  <span className="ml-6">+91 9835467289</span>
+                  <span className="ml-6">+91 9116666912</span>
                 </div>
                 <div className="flex mt-2 flex-wrap w-96 items-center">
                   <FontAwesomeIcon icon={faMapLocationDot} className="mr-2" />
