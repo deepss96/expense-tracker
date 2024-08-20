@@ -4,7 +4,7 @@ import join from "../assets/skillsImg/img5.jpg";
 import join1 from "../assets/skillsImg/img4.jpg";
 import join2 from "../assets/skillsImg/img3.png";
 import join3 from "../assets/skillsImg/img2.png";
-import join4 from "../assets/skillsImg/img1.png";
+import join4 from "../assets/skillsImg/img1.svg";
 
 
 

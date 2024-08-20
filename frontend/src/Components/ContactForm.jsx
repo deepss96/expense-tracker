@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import studyingGirl from "../assets/sleepingGirl.svg";
-import Swal from 'sweetalert2';
+import Swal from 'sweetalert2'
 
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "95e4c223-ec3a-4866-a274-18444c564687");
+        formData.append("access_key", "7e600731-ef74-4be4-9c0f-75646e26c247");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -27,54 +27,62 @@ function App() {
                 title: "Success!",
                 text: "Message sent successfully!",
                 icon: "success"
-            });
+              });
         }
     };
 
+    const [Name,] = useState("");
+
     return (
-        <div className="lg:flex-row items-center pb-5 ">
-            <div className="w-64 lg:w-72 flex justify-center lg:justify-start">
-                <img src={studyingGirl} alt="sleepingTextBookGirl" className="max-w-full h-auto" />
+        <>
+            <div className="ml-12 w-96 -mb-2">
+                <img src={studyingGirl} alt="sleepingTextBookGirl" />
             </div>
-            <div className="bg-black w-full lg:w-96 p-6 lg:p-8 rounded-lg">
-                <h2 className="text-white text-2xl mb-4">Contact Us</h2>
-                <form onSubmit={onSubmit} className="text-white font-poppins">
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Name"
-                        className="bg-black mb-4 w-full border-b-2 border-gray-500 text-white p-2 rounded focus:outline-none focus:border-purple-600"
-                        required
-                    />
-                    <input
-                        type="tel"
-                        name="phone"
-                        placeholder="Phone"
-                        className="bg-black mb-4 w-full border-b-2 border-gray-500 text-white p-2 rounded focus:outline-none focus:border-purple-600"
-                        required
-                    />
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Email"
-                        className="bg-black mb-4 w-full border-b-2 border-gray-500 text-white p-2 rounded focus:outline-none focus:border-purple-600"
-                        required
-                    />
-                    <textarea
-                        name="message"
-                        placeholder="Message"
-                        className="bg-black mb-4 w-full h-40 border-b-2 border-gray-500 text-white p-2 rounded focus:outline-none focus:border-purple-600"
-                        required
-                    ></textarea>
-                    <button
-                        type="submit"
-                        className="bg-purple-600 w-full text-white p-2 rounded hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600"
-                    >
-                        SUBMIT FORM
-                    </button>
-                </form>
+            <div className="text-white font-poppins bg-black w-120 min-h-108 pt-6 rounded-lg" >
+                <div className=" p-8 rounded-lg">
+                    <h2 className="text-white text-2xl mb-4 ">Contact Us</h2>
+                    <section>
+                        <form onSubmit={onSubmit} className="text-white font-poppins bg-black rounded-lg">
+                            <input
+                                type="text"
+                                value={Name}
+                                name="name"
+                                placeholder="Name"
+                                className="bg-black mb-6 w-44 border-b-2 border-gray-500 text-white p-2 rounded"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                className="bg-black w-52 mb-6 border-b-2 md:ml-6 border-gray-500 text-white p-2  rounded"
+                                required
+                            />
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone Number"
+                                className="bg-black w-44 mb-6 border-b-2  border-gray-500 text-white p-2  rounded"
+                                required
+                            />
+                            <input
+                                name="message"
+                                type="text"
+                                placeholder="Message"
+                                className="bg-black w-full h-18 mb-6 border-b-2 border-gray-500 text-white p-2 rounded"
+                                required
+                            ></input>
+                            <button
+                                type="submit"
+                                className="bg-purple-600 mt-6  w-full text-white p-2 rounded hover:bg-purple-700"
+                            >
+                                SUBMIT FORM
+                            </button>
+                        </form>
+                    </section>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
