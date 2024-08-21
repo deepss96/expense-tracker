@@ -34,17 +34,11 @@ function App() {
     const [Name,] = useState("");
 
     return (
-<<<<<<< HEAD
-        <div className="md:mt-0 mt-20 lg:flex-row items-center pb-5 -space-y-[5px] ">
-            <div className="w-68 lg:w-72 flex justify-center lg:justify-start">
-                <img src={studyingGirl} alt="sleepingTextBookGirl" className="md:ml-10 md:max-w-full md:h-auto w-64 h-32"/>
-=======
         <>
             <div className="ml-12 w-96 -mb-2">
                 <img src={studyingGirl} alt="sleepingTextBookGirl" />
->>>>>>> refs/remotes/origin/master
             </div>
-            <div className="text-white font-poppins bg-black w-120 min-h-108 pt-6 rounded-lg" >
+            <div className="text-white font-poppins bg-black w-108 min-h-108 pt-6 rounded-lg" >
                 <div className=" p-8 rounded-lg">
                     <h2 className="text-white text-2xl mb-4 ">Contact Us</h2>
                     <section>
@@ -54,21 +48,21 @@ function App() {
                                 value={Name}
                                 name="name"
                                 placeholder="Name"
-                                className="bg-black mb-6 w-44 border-b-2 border-gray-500 text-white p-2 rounded"
+                                className="bg-black mb-6 w-40 border-b-2 border-gray-500 text-white p-2 rounded"
                                 required
                             />
                             <input
                                 type="email"
                                 name="email"
                                 placeholder="Email"
-                                className="bg-black w-52 mb-6 border-b-2 md:ml-6 border-gray-500 text-white p-2  rounded"
+                                className="bg-black w-44 mb-6 border-b-2 md:ml-6 border-gray-500 text-white p-2  rounded"
                                 required
                             />
                             <input
                                 type="tel"
                                 name="phone"
                                 placeholder="Phone Number"
-                                className="bg-black w-44 mb-6 border-b-2  border-gray-500 text-white p-2  rounded"
+                                className="bg-black w-40 mb-6 border-b-2  border-gray-500 text-white p-2  rounded"
                                 required
                             />
                             <input
