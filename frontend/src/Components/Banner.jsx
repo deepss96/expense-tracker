@@ -32,7 +32,7 @@ function Banner() {
     <>
       {/* Section 0 */}
       <div className="mx-auto px-4 md:px-20 flex flex-col-reverse md:flex-row banner-bg">
-        <div className="order-2 md:order-1 w-full md:w-1/2 mt-20 md:mt-32">
+        <div className="order-1 md:order-1 w-full md:w-1/2 mt-20 md:mt-32">
           <div className="space-y-2">
             <h1 className="text-4xl md:text-6xl font-bold google-font">HERE AT skillUp</h1>
             <h2 className="text-2xl md:text-4xl google-font tagline">
@@ -61,26 +61,26 @@ function Banner() {
             </button>
           </div>
         </div>
-        <div className="order-1 md:order-2 w-full md:w-1/2 flex justify-center items-center md:m-20 banner-img">
-          <img src={img} className="rounded-3xl h-auto md:h-full" alt="" />
+        <div className=" mt-20 order-2 md:order-2 w-full md:w-1/2 flex justify-center items-center md:m-20 banner-img">
+          <img src={img} className="rounded-3xl h-64 md:h-full" alt="" />
         </div>
       </div>
 
       {/* Section 1 */}
-      <div className="mt-80 mb-64 mx-auto md:px-20 px-4 ">
-        <h2 className="text-7xl text-black font-poppins font-bold md:mt-52 mt-64 text-center">
+      <div className="mt-40 mb-32  px-4 ">
+        <h2 className="text-4xl md:text-6xl lg:text-7xl text-black font-poppins font-bold mt-16 md:mt-52 text-center">
           Why choose skillUp
         </h2>
 
-        <div className=" p-4 sm:p-10 text-white grid grid-rows-1">
-          <div className="grid place-items-center grid-cols-1 md:grid-cols-3 gap-2">
-            <div className="mr-auto bg-gradient w-80 h-108 flex-wrap justify-center rounded-2xl">
-              <img src={img2} className="h-44 mt-4 ml-5" alt="" />
+        <div className="p-4 sm:p-10 text-white grid grid-rows-1 gap-6">
+          <div className="grid place-items-center grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="bg-gradient w-full sm:w-80 h-auto md:h-108 flex-wrap justify-center rounded-2xl">
+              <img src={img2} className="h-32 sm:h-44 mt-4 ml-5" alt="" />
               <div className="p-4">
-                <h3 className="text-2xl font-poppins font-bold mb-2">
+                <h3 className="text-xl md:text-2xl font-poppins font-bold mb-2">
                   Hands-On Learning
                 </h3>
-                <p className="text-justify font-poppins pr-5">
+                <p className="text-sm md:text-base text-justify font-poppins pr-0 sm:pr-5">
                   Engage in project-based learning where students can build,
                   create, and innovate, making education interactive and
                   enjoyable.
@@ -88,31 +88,31 @@ function Banner() {
               </div>
             </div>
 
-            <div className="gap-6 flex-wrap w-178 items-center justify-center">
-              <div className="bg-gradient flex justify-center align-items-center pt-5 pl-6 pr-6 rounded-2xl">
-                <div className="">
-                  <h3 className="text-2xl font-poppins font-bold mb-2 ">
+            <div className="gap-6 flex-wrap w-full sm:w-120 items-center justify-center">
+              <div className="md:h-[210px] bg-gradient flex justify-center align-items-center pt-5 px-6 rounded-2xl">
+                <div>
+                  <h3 className="text-xl md:text-2xl font-poppins font-bold mb-2">
                     Real-World Skills
                   </h3>
-                  <p className="font-poppins">
+                  <p className="text-sm md:text-base font-poppins">
                     Equip students with practical skills that go beyond
                     textbooks, preparing them for real-world challenges and
                     opportunities.
                   </p>
                 </div>
-                <div className="-mb-6 w-132 ">
-                  <img src={img3} className=" " alt="" />
+                <div className="-mb-6 w-32 sm:w-132">
+                  <img src={img3} alt="" />
                 </div>
               </div>
-              <div className="bg-gradient mt-2 flex justify-center items-center pr-8 pb-10 rounded-2xl">
-                <div className="w-180 pb-8 -mt-10">
-                  <img src={img5} className="" alt="" />
+              <div className=" bg-gradient mt-4 flex justify-center items-center pr-2 sm:pr-8 pb-10 rounded-2xl">
+                <div className="w-32 sm:w-180 pb-8 -mt-10">
+                  <img src={img5} alt="" />
                 </div>
-                <div className="">
-                  <h3 className="text-2xl font-poppins font-bold text-right mb-2">
+                <div>
+                  <h3 className="text-xl md:text-2xl font-poppins font-bold text-right mb-2">
                     Vibrant Community
                   </h3>
-                  <p className="font-poppins text-right">
+                  <p className="text-sm md:text-base text-right font-poppins">
                     Join a thriving community of like-minded peers, educators,
                     and experts, fostering collaboration and a supportive
                     learning environment.
@@ -121,13 +121,13 @@ function Banner() {
               </div>
             </div>
 
-            <div className="bg-gradient ml-auto w-80 h-108 flex-wrap justify-center rounded-2xl">
-              <img src={img4} className="h-56 mt-4 ml-10" alt="" />
+            <div className="bg-gradient w-full sm:w-80 h-auto md:h-108 flex-wrap justify-center rounded-2xl">
+              <img src={img4} className="h-40 sm:h-56 mt-4 ml-10" alt="" />
               <div className="p-4 -mt-5">
-                <h3 className="text-xl font-poppins font-bold mb-2">
+                <h3 className="text-xl md:text-2xl font-poppins font-bold mb-2">
                   Expert Mentorship
                 </h3>
-                <p className="text-justify font-poppins pr-5">
+                <p className="text-sm md:text-base text-justify font-poppins pr-0 sm:pr-5">
                   Connect with industry leaders and professionals who provide
                   guidance, insights, and mentorship, helping students navigate
                   their career paths.
@@ -136,46 +136,45 @@ function Banner() {
             </div>
           </div>
 
-          <div className="pt-2 text-white flex">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <div className="bg-gradient flex justify-center items-center pl-6 rounded-2xl">
-                <div>
-                  <h3 className="text-3xl font-poppins font-bold mb-2">
-                    Customized Curriculum
-                  </h3>
-                  <p className="font-poppins">
-                    Schools can integrate our tailored programs into their
-                    curriculum, enhancing the educational experience and meeting
-                    modern educational standards.
-                  </p>
-                </div>
-
-                <div className="w-180 pt-16 -mt-10">
-                  <img src={scholarImg} alt="" />
-                </div>
+          <div className="pt-2 text-white flex flex-col md:flex-row gap-4 justify-center items-center ">
+            <div className="md:h-56 bg-gradient flex justify-center items-center px-6 rounded-2xl w-full md:w-144">
+              <div>
+                <h3 className="text-xl md:text-3xl font-poppins font-bold mb-2">
+                  Customized Curriculum
+                </h3>
+                <p className="text-sm md:text-base font-poppins">
+                  Schools can integrate our tailored programs into their
+                  curriculum, enhancing the educational experience and meeting
+                  modern educational standards.
+                </p>
               </div>
+              <div className="w-32 sm:w-180 pt-16 -mt-10">
+                <img src={scholarImg} alt="" />
+              </div>
+            </div>
 
-              <div className="bg-gradient flex justify-center items-center pr-8 rounded-2xl">
-                <div className="w-220 pt-16 ">
-                  <img src={holisticDev} alt="" />
-                </div>
-                <div className="">
-                  <h3 className="text-3xl font-poppins font-bold text-right mb-2">
-                    Holistic Development
-                  </h3>
-                  <p className="text-right font-poppins">
-                    Focus on the overall growth of students by nurturing
-                    creativity, critical thinking, and problem-solving
-                    21st-century skills that set them apart from the competition
-                    ensuring a bright future and a competitive edge in any
-                    field.
-                  </p>
-                </div>
+            <div className="md:h-56 bg-gradient flex justify-center items-center pr-4 sm:pr-8 rounded-2xl w-full md:w-144">
+              <div className="w-32 sm:w-220 pt-16">
+                <img src={holisticDev} alt="" />
+              </div>
+              <div>
+                <h3 className="text-xl md:text-3xl font-poppins font-bold text-right mb-2">
+                  Holistic Development
+                </h3>
+                <p className="text-sm md:text-base text-right font-poppins">
+                  Focus on the overall growth of students by nurturing
+                  creativity, critical thinking, and problem-solving
+                  21st-century skills that set them apart from the competition
+                  ensuring a bright future and a competitive edge in any
+                  field.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
       {/* Section-2 */}
 
       <div className="mb-20 bg-black flex flex-col-reverse md:flex-row text-white font-poppins h-auto md:h-220 md:p-0 p-14">
@@ -222,7 +221,7 @@ function Banner() {
       {/* Section 5 */}
       <section id="contact" ref={contactRef}>
         <div className="md:mt-56 h-200 md:flex items-center md:mb-32 mb-156 p-7">
-          <div className="md:w-50% w-100% md:pl-40 p-10 ">
+          <div className="md:w-50% w-100% md:pl-40">
             <div className="flex">
               <h3 className="font-poppints text-black font-semibold text-6xl w-64">Let's get in touch</h3>
               <img src={hands} className="w-20 mt-12 -ml-4" alt="hands" />
@@ -231,7 +230,7 @@ function Banner() {
               <h6 className="font-poppints text-black font-semibold text-2xl w-56">Don’t  be afraid to
                 say hello to us!</h6>
               <div className="mt-14 font-poppins">
-                <div className="flex flex-wrap w-44 items-center">
+                <div className="flex flex-wrap w-44 items-center ">
                   <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
                   <h6 className="font-semibold text-lg">Email</h6>
                   <span className="ml-6">	helpdesk.skillup@gmail.com</span>
@@ -250,7 +249,7 @@ function Banner() {
             </div>
           </div>
 
-          <div className="md:w-50% w-100% md:pl-64 p-10 md:mb-0 ">
+          <div className="md:w-50% w-100% md:pl-64 p-5 md:mb-0 ">
             <ContactForm />
           </div>
 

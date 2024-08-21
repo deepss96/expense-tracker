@@ -32,9 +32,9 @@ function App() {
     };
 
     return (
-        <div className="lg:flex-row items-center pb-5 ">
-            <div className="w-64 lg:w-72 flex justify-center lg:justify-start">
-                <img src={studyingGirl} alt="sleepingTextBookGirl" className="max-w-full h-auto" />
+        <div className="md:mt-0 mt-20 lg:flex-row items-center pb-5 -space-y-[5px] ">
+            <div className="w-68 lg:w-72 flex justify-center lg:justify-start">
+                <img src={studyingGirl} alt="sleepingTextBookGirl" className="md:ml-10 md:max-w-full md:h-auto w-64 h-32"/>
             </div>
             <div className="bg-black w-full lg:w-96 p-6 lg:p-8 rounded-lg">
                 <h2 className="text-white text-2xl mb-4">Contact Us</h2>
