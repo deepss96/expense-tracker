@@ -78,4 +78,4 @@ Contributions are welcome! Here's how you can help:
 
 ## Contact
 
-For questions or feedback, feel free to reach out via [email](mailto:your.email@example.com).
+For questions or feedback, feel free to reach out via [email](mailto:skillup.sudh@gmail.com).
