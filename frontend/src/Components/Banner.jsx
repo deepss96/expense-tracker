@@ -200,16 +200,16 @@ function Banner() {
         </div>
         <div className="flex flex-wrap justify-center md:justify-between items-center text-black my-10 md:ml-32 md:mr-32 gap-10 md:gap-0">
           <div className="flex flex-col items-center">
-            <img src={uditImg} className="h-64 w-48 md:h-96 md:w-60 rounded-lg" alt="Udit Agrawal" />
-            <h4 className="text-lg md:text-2xl text-center font-poppins font-bold mt-2">Udit Agrawal</h4>
+            <img src={harshitaImg} className="h-64 w-48 md:h-96 md:w-60 rounded-lg" alt="Harshita Lalwani" />
+            <h4 className="text-lg md:text-2xl text-center font-poppins font-bold mt-2">Harshita Lalwani</h4>
           </div>
           <div className="flex flex-col items-center">
             <img src={shipraImg} className="h-64 w-48 md:h-96 md:w-60 rounded-lg" alt="Shipra Agrawal" />
             <h4 className="text-lg md:text-2xl text-center font-poppins font-bold mt-2">Shipra Agrawal</h4>
           </div>
           <div className="flex flex-col items-center">
-            <img src={harshitaImg} className="h-64 w-48 md:h-96 md:w-60 rounded-lg" alt="Harshita Lalwani" />
-            <h4 className="text-lg md:text-2xl text-center font-poppins font-bold mt-2">Harshita Lalwani</h4>
+            <img src={uditImg} className="h-64 w-48 md:h-96 md:w-60 rounded-lg" alt="Udit Agrawal" />
+            <h4 className="text-lg md:text-2xl text-center font-poppins font-bold mt-2">Udit Agrawal</h4>
           </div>
           <div className="flex flex-col items-center">
             <img src={deepakImg} className="h-64 w-48 md:h-96 md:w-60 rounded-lg" alt="Deepak Vaishnav" />
