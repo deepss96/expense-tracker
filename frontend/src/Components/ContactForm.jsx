@@ -8,7 +8,7 @@ function App() {
         event.preventDefault();
         const formData = new FormData(event.target);
 
-        formData.append("access_key", "7e600731-ef74-4be4-9c0f-75646e26c247");
+        formData.append("access_key", "95e4c223-ec3a-4866-a274-18444c564687");
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
@@ -31,7 +31,7 @@ function App() {
         }
     };
 
-    const [Name,] = useState("");
+    
 
     return (
         <>
@@ -45,24 +45,23 @@ function App() {
                         <form onSubmit={onSubmit} className="text-white font-poppins bg-black rounded-lg">
                             <input
                                 type="text"
-                                value={Name}
                                 name="name"
                                 placeholder="Name"
                                 className="bg-black mb-6 w-40 border-b-2 border-gray-500 text-white p-2 rounded"
                                 required
                             />
                             <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                className="bg-black w-44 mb-6 border-b-2 md:ml-6 border-gray-500 text-white p-2  rounded"
-                                required
-                            />
-                            <input
                                 type="tel"
                                 name="phone"
                                 placeholder="Phone Number"
-                                className="bg-black w-40 mb-6 border-b-2  border-gray-500 text-white p-2  rounded"
+                                className="bg-black w-40 mb-6 border-b-2 ml-12 border-gray-500 text-white p-2  rounded"
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                className="bg-black w-72 mb-6 border-b-2  border-gray-500 text-white p-2  rounded"
                                 required
                             />
                             <input
